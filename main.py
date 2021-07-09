@@ -20,6 +20,15 @@ class QueryIn(BaseModel):
 class QueryOut(BaseModel):
     flower_class: str
 
+ # class which is expected in the payload while re-training
+
+class FeedbackIn(BaseModel):
+    sepal_length: float
+    sepal_width: float
+    petal_length: float
+    petal_width: float
+    flower_class : str
+
 
 @app.get("/ping")
 def ping():
