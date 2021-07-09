@@ -1,4 +1,5 @@
 import uvicorn
+from scipy.sparse import issparse
 from fastapi import FastAPI
 from pydantic import BaseModel
 from ml_utils import load_model, predict
