@@ -10,10 +10,10 @@ def test_ping():
 
 def test_pred_virginica():
     payload = {
-      "sepal_length": 3,
-      "sepal_width": 5,
-      "petal_length": 3.2,
-      "petal_width": 4.4
+      "sepal_length": 2.5,
+      "sepal_width": 1.9,
+      "petal_length": 8.8,
+      "petal_width": 10.3
     }
     with TestClient(app) as client:
         response = client.post('/predict_flower', json=payload)
